@@ -7,8 +7,5 @@
     "author": "dwalker@vorteon.com",
     "engines": {
         "node": ">=8.0.0"
-    },
-    "scripts": {
-        "start": "node server.js"
-    }	
+    }
 }
