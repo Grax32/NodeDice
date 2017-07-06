@@ -9,6 +9,7 @@
         "node": ">=8.0.0"
     },
     "devDependencies": {
-        "express": "^4.15.3"
+        "express": "^4.15.3",
+        "grunt": "^1.0.1"
     }
 }
