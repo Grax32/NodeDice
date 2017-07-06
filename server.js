@@ -1,6 +1,6 @@
 var express = require('express');
 
-var app = express.createServer();
+var app = express();
 
 app.get('/',function (request, response) {
 	var content = "Hello Wonderful People!";
