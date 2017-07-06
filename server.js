@@ -1,15 +1,18 @@
-var http = require('http');
+var express = require('express');
 
-var server = http.createServer(function(request, response) {
-    response.writeHead(200, {"Content-Type": "text/plain"});
-    response.end("Hello Wonderful People!");
+var app = express.createServer();
+
+app.get('/',function (request, response) {
+	var content = "Hello Wonderful People!";
+	response.charset = "utf-8";
+	response.contentType("text/plain");
+	response.send(content);
 });
 
 var port = process.env.PORT || 1337;
-// console.error("Server running at http://%s:%d", sitename, port);
-
-server.listen(port);
+app.listen(port);
 
 var sitename = process.env.WEBSITE_SITE_NAME;
 
+console.log("Listening on %s port %s",sitename,port);
 
