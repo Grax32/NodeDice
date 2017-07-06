@@ -8,6 +8,7 @@ var server = http.createServer(function(request, response) {
 });
 
 var port = process.env.PORT || 1337;
+port = 80;
 
 server.listen({ port: port });
 
