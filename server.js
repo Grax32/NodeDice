@@ -2,12 +2,11 @@ var http = require('http');
 
 var server = http.createServer(function(request, response) {
     response.setHeader('Content-Type', 'text/plain; charset=UTF-8');
-    response.setHeader('Transfer-Encoding', 'chunked');
 	
-	response.write("Greetings.");
-	response.write(process.env.WEBSITE_SITE_NAME);
-	response.write("Greetings.");
-    response.end("Hello Wonderful People!");
+	response.write("Greetings.\n");
+	response.write(process.env.WEBSITE_SITE_NAME+"\n");
+	response.write("Greetings.\n);
+    response.end("Hello Wonderful People!\n");
 });
 
 var port = process.env.PORT || 1337;
