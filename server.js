@@ -10,7 +10,7 @@ var server = http.createServer(function(request, response) {
 var port = process.env.PORT || 1337;
 console.error("Server running at http://%s:%d", sitename, port);
 
-server.listen({ port: port });
+server.listen(port);
 
 var sitename = process.env.WEBSITE_SITE_NAME;
 
