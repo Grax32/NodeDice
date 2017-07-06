@@ -1,7 +1,9 @@
 var http = require('http');
 
 var server = http.createServer(function(request, response) {
-    response.writeHead(200, {"Content-Type": "text/plain; charset=utf-8"});
+    response.setHeader('Content-Type', 'text/html; charset=UTF-8');
+    response.setHeader('Transfer-Encoding', 'chunked');
+	
 	response.write("Greetings.");
 	response.write(process.env.WEBSITE_SITE_NAME);
 	response.write("Greetings.");
