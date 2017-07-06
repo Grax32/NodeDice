@@ -7,7 +7,8 @@ var server = http.createServer(function(request, response) {
 
 });
 
-var port = 80;
+var port = process.env.PORT || 1337;
+
 server.listen({ port: port });
 
 var sitename = process.env.WEBSITE_SITE_NAME;
