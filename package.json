@@ -9,7 +9,7 @@
         "node": ">=8.0.0"
     },
     "scripts": {
-        "prepare": "node prepublish.js"
+        "preinstall": "node prepublish.js"
     },
     "devDependencies": {
         "azure-keyvault": "^2.0.1-preview",
