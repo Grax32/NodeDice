@@ -1,3 +1,4 @@
+require("./startup.js");
 var http = require('http');
 
 var sitename = process.env.WEBSITE_SITE_NAME;
