@@ -1,7 +1,5 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
+# Source Repo for Shadow POC
+# Dest Repo is https://github.com/Grax32/NodeDice.git
 
 trigger:
 - master
@@ -11,9 +9,12 @@ pool:
 
 steps:
 - script: git status
-  displayName: 'Do a git command'
+  displayName: 'Status'
 
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo git log
-  displayName: 'Do another git command'
+    echo Git Log
+    git log
+  displayName: 'History'
+
+- script: git push https://github.com/Grax32/NodeDice.git
+  displayName: Push to GitHub
