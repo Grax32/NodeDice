@@ -16,5 +16,5 @@ steps:
     git log
   displayName: 'History'
 
-- script: git push https://github.com/Grax32/NodeDice.git
+- script: git push https://github.com/Grax32/NodeDice.git HEAD:dev
   displayName: Push to GitHub
