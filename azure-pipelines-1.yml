@@ -12,9 +12,10 @@ steps:
   displayName: 'Status'
 
 - script: |
-    echo Git Log
-    git log
+    echo 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 | gh auth login
   displayName: 'History'
 
 - script: git push https://github.com/Grax32/NodeDice.git HEAD:dev
   displayName: Push to GitHub
+
+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
