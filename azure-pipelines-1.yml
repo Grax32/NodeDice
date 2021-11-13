@@ -8,5 +8,5 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: git push https://grax32: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@github.com/Grax32/NodeDice.git HEAD:dev
+- script: git push --force https://grax32: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@github.com/Grax32/NodeDice.git HEAD:dev
   displayName: Push to GitHub
