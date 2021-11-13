@@ -11,8 +11,7 @@ steps:
 - script: git status
   displayName: 'Status'
 
-- script: |
-    echo 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 | gh auth login
+- script: echo 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 | gh auth login
   displayName: 'History'
 
 - script: git push https://github.com/Grax32/NodeDice.git HEAD:dev
