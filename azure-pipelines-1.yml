@@ -16,5 +16,3 @@ steps:
 
 - script: git push https://github.com/Grax32/NodeDice.git HEAD:dev
   displayName: Push to GitHub
-
-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
