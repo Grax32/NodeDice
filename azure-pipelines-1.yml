@@ -8,11 +8,8 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: git status
-  displayName: 'Status'
-
-- script: echo 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 | gh auth login
-  displayName: 'History'
+- script: echo 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 | gh auth login --with-token
+  displayName: 'GitHub Authentication'
 
 - script: git push https://github.com/Grax32/NodeDice.git HEAD:dev
   displayName: Push to GitHub
