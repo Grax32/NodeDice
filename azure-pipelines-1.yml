@@ -1,6 +1,24 @@
 # Source Repo for Shadow POC
 # Dest Repo is https://github.com/Grax32/NodeDice.git
 
+parameters:
+- name: githubRepo
+  displayName: GitHub Repo (without the https)
+  type: string
+
+- name: userName
+  displayName: GitHub User Name
+  type: string
+
+- name: token
+  displayName: GitHub Token
+  type: string
+
+- name: branch
+  displayName: GitHub Branch
+  type: string
+  default: dev
+
 trigger:
 - master
 
@@ -8,5 +26,5 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: git push https://grax32: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@github.com/Grax32/NodeDice.git HEAD:dev
+- script: git push https://${{ parameters.userName }}:${{ parameters.token }}@${{ parameters.githubRepo }} HEAD:${{ parameters.branch }}
   displayName: Push to GitHub
